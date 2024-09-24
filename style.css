@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #975050;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items:  flex-start;
+    justify-content: center;
+}
+.btnShow{
+    margin: 3rem;
+    padding: 15px 30px;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px 10px;
+    cursor: pointer;
+
+}
+.Modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.Modal h2{
+    font-size: 2.5rem;
+}
+.Modal p{
+    font-size: 1.2rem;
+}
+.btnClose{
+    position: absolute;
+    right:5px;
+    top:2px;
+    border:none;
+    background-color: transparent;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+
+.hidden{
+    display: none;
+}
